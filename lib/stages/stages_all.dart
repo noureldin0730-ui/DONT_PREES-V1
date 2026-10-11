@@ -771,7 +771,7 @@ Wrap(spacing: 16, runSpacing: 16, alignment: WrapAlignment.center,
           return _roundButton('${i + 1}', size: 80, color: hl ? P.rare : null, onTap: () => _press(i));
         })),
     ]));
-   }}
+}
 }
 // ═══════════════ المرحلة 17 ═══════════════
 class _Stage17 extends StatefulWidget {
