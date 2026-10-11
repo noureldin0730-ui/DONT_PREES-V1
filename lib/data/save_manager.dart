@@ -46,7 +46,7 @@ class SaveManager {
 
   static Future<int> getTotalStars() async {
     final stars = await getStars();
-    return stars.values.fold(0, (a, b) => a + b);
+    return stars.values.fold<int>(0, (a, b) => a + b);
   }
 
   static Future<void> resetAll() async {
