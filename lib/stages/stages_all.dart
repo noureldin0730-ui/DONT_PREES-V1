@@ -764,13 +764,15 @@ class _Stage16State extends State<_Stage16> {
       Text(_showing ? 'احفظ...' : 'كرر',
           textDirection: TextDirection.rtl,
           style: const TextStyle(color: P.mid, fontSize: 18)),
-      const SizedBox(height: 40),      Wrap(spacing: 16, runSpacing: 16, alignment: WrapAlignment.center,
+      const SizedBox(height: 40),
+Wrap(spacing: 16, runSpacing: 16, alignment: WrapAlignment.center,
         children: List.generate(4, (i) {
           final hl = _showing && _showIdx < _seq.length && _seq[_showIdx] == i;
           return _roundButton('${i + 1}', size: 80, color: hl ? P.rare : null, onTap: () => _press(i));
         })),
     ]));
-  }
+   }
+}
 
 // ═══════════════ المرحلة 17 ═══════════════
 class _Stage17 extends StatefulWidget {
